@@ -3,40 +3,44 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <nav class="main-nav">
-      <a class="page-header__logo" href="#">
-        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
-      </a>
-      <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="logo-wrapper">
+        <a class="page-header__logo" href="#">
+          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
+        </a>
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="main-nav__link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="main-nav__link" href="form.html">
               Вязание на заказ
             </a>
           </li>
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item user-list__item_search">
-            <a href="#">
+            <a class="main-nav__link" href="#">
               <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="m17.7 16.06-3.48-3.48a7.63 7.63 0 0 0 1.53-4.7c0-4.4-3.48-7.88-7.88-7.88A7.81 7.81 0 0 0 0 7.88c0 4.4 3.48 7.87 7.88 7.87 1.73 0 3.37-.61 4.7-1.53l3.48 3.47c.2.2.4.31.82.31.6 0 1.12-.51 1.12-1.13 0-.2-.1-.5-.3-.81ZM2.24 7.88a5.67 5.67 0 0 1 5.63-5.63 5.67 5.67 0 0 1 5.62 5.63 5.67 5.67 0 0 1-5.63 5.62 5.67 5.67 0 0 1-5.62-5.63Z" fill="#000"/></svg>
               Поиск по сайту
             </a>
           </li>
           <li class="user-list__item user-list__item_cart">
-            <a href="#">
+            <a class="main-nav__link" href="#">
               <svg width="21" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M20.19 6.86h-3.55L13.19.38c-.2-.38-.61-.48-1.02-.28-.4.19-.5.57-.3.95l3.14 5.8H5.78l3.15-5.8c.2-.38 0-.76-.3-.95A.82.82 0 0 0 7.6.38L4.16 6.86H.8c-.4 0-.81.28-.81.76 0 .38.3.76.81.76h.2l.92 2.86c-.2.1-.3.28-.3.57 0 .38.3.67.7.67L4.06 18h12.88l1.73-5.52c.4 0 .7-.29.7-.67 0-.2-.1-.48-.3-.57L20 8.38h.2c.4 0 .81-.28.81-.76s-.4-.76-.81-.76Zm-4.57 9.62H5.07l-1.21-4.1h13.08l-1.32 4.1Zm1.63-5.53H3.35L2.54 8.3h15.52l-.81 2.66Z" fill="#000"/></svg>
               Корзина: пока пуста
             </a>
@@ -46,12 +50,12 @@
       <div class="sub-nav-wrapper">
         <ul class="main-nav__list sub-nav">
           <li class="user-list__item">
-            <a href="#">
+            <a class="sub-nav__link" href="#">
               Новые поступления
             </a>
           </li>
           <li class="user-list__item">
-            <a href="#">
+            <a class="sub-nav__link" href="#">
               Распродажа
             </a>
           </li>
@@ -65,16 +69,16 @@
     <section class="categories">
       <div class="categories__wrapper">
         <h2 class="categories__title title">
-          Милые штуки ручной работы для дома
+          Милые штуки ручной<br> работы для дома
         </h2>
         <ul class="categories__list">
           <li class="categories__item">
-            <a>
+            <a class="categories__link" href="#">
               Предметы интерьера
             </a>
           </li>
           <li class="categories__item">
-            <a>
+            <a class="categories__link" href="#">
               Детские игрушки
             </a>
           </li>
@@ -84,7 +88,7 @@
     <section class="popular-product">
       <div class="popular-product__wrapper">
         <h2 class="popular-product__title title">Вязаные корзинки</h2>
-        <h3 class="popular-product__subtitle">ТОВАР НЕДЕЛИ</h3>
+        <h3 class="popular-product__subtitle">Товар недели</h3>
         <p class="popular-product__text text">Экологически чистая пряжа,
           ручная работа. Доступны в шести расцветках и трёх размерах.</p>
         <table class="popular-product__specifications">
@@ -161,10 +165,10 @@
       <div class="contacts__wrapper">
         <h2 class="contacts__title title">Контакты</h2>
         <address class="contacts__address">
-          e-mail: <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          e-mail: <a class="contacts__e-mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           адрес: <p>г. Санкт-Петербург ул. Большая Конюшеннаяд. 19/8, офис 101</p>
         </address>
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A10ebb0cfe98c796bac849b1241e2e95c10a3a1b220aaf0ee8365d9ef094e9610&amp;width=768&amp;height=457&amp;lang=ru_RU&amp;scroll=true"></script>
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A10ebb0cfe98c796bac849b1241e2e95c10a3a1b220aaf0ee8365d9ef094e9610&amp;width=100%25&amp;height=447&amp;lang=ru_RU&amp;scroll=true"></script>
         <button class="contacts__write-button button" type="button">Напишите нам</button>
       </div>
     </section>
