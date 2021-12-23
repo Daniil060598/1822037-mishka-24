@@ -4,8 +4,10 @@
 }
 
 .page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  padding: 0 29px 32px;
+  padding: 25px 29px 32px;
   max-width: 260px;
 }
 
@@ -13,3 +15,18 @@
   font-size: 19px;
   line-height: 18px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    max-width: 668px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    max-width: 1050px;
+  }
+}
+
