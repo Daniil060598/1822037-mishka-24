@@ -1,11 +1,10 @@
 .popular-product__wrapper {
   display: flex;
   flex-direction: column;
-  margin: 31px auto 36px;
-  padding: 0 30px;
+  margin: 0 auto;
+  padding: 31px 30px 42px;
   max-width: 260px;
 }
-
 
 .popular-product__title {
   margin-bottom: 10px;
@@ -16,11 +15,11 @@
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #63D1BB;
-
+  color: #63d1bb;
+  margin: 0;
 }
 
-.popular-product__specifications th, td {
+.popular-product__specifications {
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
@@ -34,7 +33,7 @@
 }
 
 @media (min-width: @tablet-width) {
-.popular-product__wrapper {
+  .popular-product__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 668px;
@@ -75,6 +74,7 @@
 @media (min-width: @desktop-width) {
   .popular-product__wrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 54px 30px 98px;
     max-width: 1050px;
   }
 
