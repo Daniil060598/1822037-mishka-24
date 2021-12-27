@@ -1,10 +1,10 @@
 .order {
-  margin-bottom: 55px;
+
 }
 
 .order__wrapper {
   margin: 0 auto;
-  padding: 0 29px;
+  padding: 0 30px;
   max-width: 260px;
 }
 
@@ -15,7 +15,37 @@
 
 .order__title {
   margin: 0 auto;
-  padding: 73px 29px;
+  padding: 73px 30px;
   max-width: 260px;
+  text-align: center;
+}
+
+.order__wrapper-grey {
+  background-color: #F1F1F1;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .order__title {
+    max-width: 668px;
+  }
+
+  .order__wrapper {
+    max-width: 668px;
+  }
+
+  .order-form__group {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order__title {
+    max-width: 1050px;
+  }
+
+  .order__wrapper {
+    max-width: 1050px;
+  }
 }
 
