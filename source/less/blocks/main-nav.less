@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 320px;
+  width: auto;
 }
 
 .logo-wrapper {
@@ -131,7 +131,8 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 668px;
+    padding: 0 50px;
+    max-width: 1050px;
   }
 
   .site-list {
@@ -159,7 +160,6 @@
 @media (min-width: @desktop-width) {
   .main-nav {
     display: block;
-    max-width: 1050px;
   }
 
   .logo-wrapper {
@@ -169,6 +169,7 @@
   .main-nav__wrapper {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   .main-nav__link-text {
@@ -177,10 +178,22 @@
 
   .site-list {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
   }
 
   .site-list__item {
     padding: 0;
+    padding-right: 35px;
+    margin-right: 35px;
+    border-bottom: none;
+    border-right: 1px solid #ececec;
+
+    &:last-child {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
   }
 
   .page-header__logo_desktop {
