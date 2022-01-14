@@ -1,0 +1,23 @@
+.field {
+  margin: 0;
+  padding: 17px 0 17px 0;
+  font-size: 17px;
+  line-height: 18px;
+  width: 100%;
+  background-color: @white;
+  border: none;
+  border-bottom: 2px solid @black;
+  outline: none;
+}
+
+.field::placeholder {
+  color: #00000030;
+}
+
+.field:hover {
+  border-bottom: 2px solid #62D1BA;
+}
+
+.field:not(:placeholder-shown) {
+  color: #444444;
+}
