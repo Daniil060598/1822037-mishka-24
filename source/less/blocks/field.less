@@ -4,7 +4,7 @@
   font-size: 17px;
   line-height: 18px;
   width: 100%;
-  background-color: @white;
+  background-color: transparent;
   border: none;
   border-bottom: 2px solid @black;
   outline: none;
@@ -15,9 +15,16 @@
 }
 
 .field:hover {
-  border-bottom: 2px solid #62D1BA;
+  border-bottom: 2px solid #62d1ba;
 }
 
 .field:not(:placeholder-shown) {
   color: #444444;
+  border-color: #62d1ba;
+}
+
+@media (min-width: @tablet-width) {
+  .field {
+    padding: 17px 17px;
+  }
 }

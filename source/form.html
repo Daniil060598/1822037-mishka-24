@@ -12,7 +12,7 @@
   <header class="page-header">
     <nav class="main-nav main-nav_closed main-nav_nojs">
       <div class="logo-wrapper">
-        <a class="page-header__logo" href="#">
+        <a class="page-header__logo" href="index.html">
           <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
         </a>
         <button class="main-nav__toggle" type="button">
@@ -87,7 +87,7 @@
     </div>
     <form class="order-form" action="https://echo.htmlacademy.ru/" method="get">
       <div class="order__wrapper">
-        <p class="order__text text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="order-form__text text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="order-form__group">
           <h2 class="order-form__title">Тип</h2>
           <ul class="order-form__list">
@@ -162,7 +162,7 @@
       <div class="order__wrapper">
         <fieldset class="order-form__group">
           <h2 class="order-form__title">ФИО</h2>
-          <div class="form-wrapper">
+          <div class="order-form__field-wrapper">
             <p class="order-form__field-group">
               <label class="order-form__label" for="name">Имя:</label>
               <input class="order-form__name field" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
@@ -175,24 +175,25 @@
               <label class="order-form__label" for="patronymic">Отчество:</label>
               <input class="order-form__patronymic field" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
             </p>
+          </div>
         </fieldset>
       </div>
       <div class="order__wrapper-grey">
         <div class="order__wrapper">
             <p class="order-form__field-group">
-              <h2 class="order-form__title">Тел</h2>
+              <label class="order-form__title" for="tel">Тел</label>
               <input class="order-form__tel field" type="tel" id="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
             </p>
             <p class="order-form__field-group">
-              <h2 class="order-form__title">E-mail</h2>
+              <label class="order-form__title" for="email">E-mail</label>
               <input class="order-form__email field" type="email" id="email" name="email" placeholder="Введите e-mail" required>
             </p>
         </div>
       </div>
       <div class="order__wrapper">
           <p class="order-form__field-group">
-            <h2 class="order-form__title">Доп</h2>
-            <input class="order-form__text field" type="text" id="message" name="message" placeholder="В свободной форме" required>
+            <label class="order-form__title" for="message">Доп</label>
+            <input class="order-form__message field" type="text" id="message" name="message" placeholder="Опишите все ваши пожелания к заказу" required>
           </p>
         <span class="order-form__signature">*Поля обязательны для заполнения</span>
         <button class="order-form__button button" type="submit">Отправить заказ</button>
