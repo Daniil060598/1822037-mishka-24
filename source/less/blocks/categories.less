@@ -1,58 +1,139 @@
+.categories {
+  position: relative;
+  background: url("../img/hero-desktop.jpg") 50%/cover no-repeat;
+}
+
 .categories__wrapper {
-  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 489px;
   margin: 0 auto;
-  padding-top: 73px;
-  background-image: url(../img/hero-desktop.jpg);
-  background-repeat: no-repeat;
-  background-position: top;
 }
 
 .categories__title {
   max-width: 260px;
   text-align: center;
-  margin: 0 auto 120px;
+  margin: 73px auto 0;
   padding: 0 30px;
 }
 
 .categories__list {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: auto 0 0;
   padding: 0;
   list-style: none;
 }
 
 .categories__link {
   display: block;
-  padding: 24px 181px 31px 30px;
-  background: #63d1bb;
+  position: relative;
+  padding: 24px 37px 31px 30px;
+  background-color: #63d1bb;
   color: #ffffff;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
+  text-decoration: none;
+
+  &:hover {
+    padding-bottom: 36px;
+  }
+}
+
+
+.categories__link_interior::after {
+  position: absolute;
+  content: url("../img/interior.svg");
+  top: 23px;
+  right: 36px;
+  opacity: 0.5;
+}
+
+.categories__link_toys {
+  background-color: #56c3b2;
+
+  &::after {
+    position: absolute;
+    content: url("../img/toy-icon.svg");
+    top: 23px;
+    right: 36px;
+    opacity: 0.5;
+  }
+}
+
+.categories__link_interior:hover::after,
+.categories__link_toys:hover::after {
+  opacity: 1;
+}
+
+.categories__link_interior:active::after,
+.categories__link_toys:active::after {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
+  .categories::after {
+    position: absolute;
+    content: "";
+    bottom: -12px;
+    height: 24px;
+    width: 100%;
+    background-image: url("../img/zigzag-fill-tablet.svg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+  }
+
   .categories__wrapper {
+    max-width: 1050px;
+    padding: 0 50px;
+    height: 679px;
+  }
+
+  .categories__title {
     max-width: 668px;
+    margin-top: 88px;
   }
 
   .categories__list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .categories__item {
+    width: 50%;
   }
 
   .categories__link {
-    padding: 25px 183px 34px 36px;
+    padding: 25px 37px 34px 36px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &:hover {
+      padding-bottom: 39px;
+    }
+  }
+
+  .categories__link_interior::after,
+  .categories__link_toys::after {
+    top: 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .categories__wrapper {
-    max-width: 1050px;
+  .categories::after {
+    height: 44px;
+    background-image: url("../img/zigzag-fill-desktop.svg");
   }
 
-  .categories__link {
-    padding: 25px 350px 34px 37px;
+  .categories__wrapper {
+    height: 679px;
+  }
+
+  .categories__title {
+    max-width: 700px;
   }
 }
