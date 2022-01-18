@@ -13,7 +13,7 @@
   box-sizing: border-box;
 
   &:hover {
-    border-color: #62D1BA;
+    border-color: #62d1ba;
   }
 
   &:active {
@@ -40,13 +40,13 @@
   left: 10px;
   width: 18px;
   height: 18px;
-  background-color: #62D1BA;
+  background-color: #62d1ba;
   border-radius: 50%;
   content: "";
 }
 
 .control__input[type="checkbox"]:checked + .control__mark {
-  background-image: url(../img/tick.svg);
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -68,4 +68,9 @@
     width: 22.7px;
     height: 22.7px;
   }
+
+  .control__input[type="checkbox"]:checked + .control__mark {
+    background-size: 31px 22px;
+  }
+
 }
