@@ -8,7 +8,7 @@
   bottom: 0;
   height: 24px;
   width: 100%;
-  background-image: url("../img/zigzag-line-mobile.svg");
+  background-image: url("../img/pattern-bg/zigzag-line-mobile.svg");
   background-position: bottom;
   background-repeat: repeat-x;
 }
@@ -79,10 +79,15 @@
     background-image: url("../img/review-bg.jpg");
     background-position: left top;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review-bg@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews::after {
-    background-image: url("../img/zigzag-line-tablet.svg");
+    background-image: url("../img/pattern-bg/zigzag-line-tablet.svg");
   }
 
   .reviews__wrapper {
@@ -140,6 +145,11 @@
     background-image: url("../img/review-bg.jpg");
     background-position: left top;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review-bg@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews__wrapper::after {
@@ -148,7 +158,7 @@
     bottom: 0;
     height: 23px;
     width: 100%;
-    background-image: url("../img/zigzag-line-desktop.svg");
+    background-image: url("../img/pattern-bg/zigzag-line-desktop.svg");
     background-position: bottom;
     background-repeat: repeat-x;
   }
