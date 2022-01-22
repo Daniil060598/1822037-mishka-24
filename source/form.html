@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Вязание на заказ</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -13,7 +17,10 @@
     <nav class="main-nav main-nav_closed main-nav_nojs">
       <div class="logo-wrapper">
         <a class="page-header__logo" href="index.html">
-          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logotype/mishka-logo-tablet.svg" width="113" height="46">
+            <img src="img/logotype/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -33,7 +40,7 @@
           </li>
         </ul>
         <a class="page-header__logo page-header__logo_desktop" href="index.html">
-          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
+          <img src="img/logotype/mishka-logo-desktop.svg" width="136" height="65" alt="Интернет-магазин Мишка">
         </a>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">

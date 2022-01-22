@@ -1,6 +1,14 @@
 .categories {
   position: relative;
-  background: url("../img/hero-desktop.jpg") 50%/cover no-repeat;
+  background-image: url("../img/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% -18px;
+  background-color: #f9f9f9;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .categories__wrapper {
@@ -74,13 +82,26 @@
 }
 
 @media (min-width: @tablet-width) {
+  .categories {
+    position: relative;
+    background-image: url("../img/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% -36px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1150px auto;
+      background-position: 50% -36px;
+    }
+  }
+
   .categories::after {
     position: absolute;
     content: "";
     bottom: -12px;
     height: 24px;
     width: 100%;
-    background-image: url("../img/zigzag-fill-tablet.svg");
+    background-image: url("../img/pattern-bg/zigzag-fill-tablet.svg");
     background-position: bottom;
     background-repeat: repeat-x;
   }
@@ -124,9 +145,13 @@
 }
 
 @media (min-width: @desktop-width) {
+  .categories {
+    background-position: 50% 0;
+  }
+
   .categories::after {
     height: 44px;
-    background-image: url("../img/zigzag-fill-desktop.svg");
+    background-image: url("../img/pattern-bg/zigzag-fill-desktop.svg");
   }
 
   .categories__wrapper {
