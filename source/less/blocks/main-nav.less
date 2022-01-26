@@ -16,6 +16,16 @@
   border-bottom: 1px solid #ececec;
 }
 
+.page-header__logo {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 32px;
@@ -70,14 +80,6 @@
   &:active::after {
     background-color: fade(@black, 30%);
   }
-
-  .main-nav_nojs .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav_nojs .main-nav__wrapper {
-    display: flex;
-  }
 }
 
 .main-nav__wrapper {
@@ -123,6 +125,14 @@
 @media (max-width: @mobile-width-only) {
   .main-nav_closed .main-nav__wrapper {
     display: none;
+  }
+
+  .main-nav_nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav_nojs .main-nav__wrapper {
+    display: flex;
   }
 }
 
