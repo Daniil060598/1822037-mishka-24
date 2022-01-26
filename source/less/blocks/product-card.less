@@ -1,5 +1,6 @@
 .product-card {
   margin-bottom: 30px;
+  border: 1px solid #ECECEC;
 
   &:hover {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
@@ -26,7 +27,6 @@
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  border: 1px solid #ECECEC;
   padding: 27.5px 28px 26.5px;
 }
 
@@ -51,13 +51,14 @@
   font-size: 13px;
   line-height: 30px;
   padding-bottom: 17.5px;
-  border-bottom: 1px solid #ECECEC;
 }
 
 .product-card__desc {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  border-top: 1px solid #ECECEC;
+  padding-top: 22.5px;
 }
 
 .product-card__button {
@@ -121,6 +122,7 @@
 
   .product-card__wrapper {
     width: 100%;
+    flex-grow: 1;
   }
 
   .product-card__text {
