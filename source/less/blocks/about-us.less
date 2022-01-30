@@ -84,26 +84,36 @@
 
 @media (min-width: @tablet-width) {
   .about-us {
-    padding: 31px 50px 58px;
+    padding: 55px 50px 58px;
     max-width: 1050px;
-  }
-
-  .about-us__wrapper {
-
   }
 
   .about-us__list-wrapper {
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 83px;
+    padding-right: 32px;
+  }
+
+  .about-us__title {
+    margin-bottom: 41px;
   }
 
   .about-us__list {
-    max-width: 250px;
+    max-width: 300px;
+  }
+
+  .about-us__item {
+    margin-bottom: 57px;
+    line-height: 22px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .about-us {
+    padding-top: 68px;
+  }
+
   .about-us__wrapper {
     padding-left: 175px;
     box-sizing: border-box;
@@ -111,6 +121,14 @@
 
   .about-us__list-wrapper {
     justify-content: start;
-    column-gap: 100px;
+    column-gap: 50px;
+  }
+
+  .about-us__title {
+    margin-bottom: 39px;
+  }
+
+  .about-us__item {
+    margin-bottom: 60px;
   }
 }
