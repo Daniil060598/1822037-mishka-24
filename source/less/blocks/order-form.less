@@ -1,5 +1,5 @@
 .order-form {
-  padding: 17px 0 55px;
+  padding: 17px 0 22px;
 }
 
 .order-form__text {
@@ -16,7 +16,7 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #63d1bb;
-  margin: 0 0 30px;
+  margin: 0 0 28px;
 }
 
 .order-form__title::after {
@@ -39,12 +39,14 @@
 }
 
 .order-form__list-color {
-  row-gap: 23px;
+  row-gap: 19px;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
 .order-form__item {
+  display: flex;
+  align-items: center;
   position: relative;
   min-height: 42px;
   width: 100%;
@@ -59,7 +61,7 @@
 }
 
 .order-form__field-group {
-  margin-bottom: 22px;
+  margin: 0 0 20px;
 }
 
 .order-form__field-group:last-child {
@@ -71,6 +73,10 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
+}
+
+.order-form__title_margin {
+  margin-bottom: 1.5px;
 }
 
 .order-form__tel {
@@ -110,7 +116,7 @@
   font-size: 14px;
   line-height: 16px;
   color: @darkgrey;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .order-form__button {
@@ -164,21 +170,28 @@
   .order-form__field-group {
     display: flex;
     align-items: baseline;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
   }
 
   .order-form__label {
     margin-right: 23px;
   }
 
+  .order-form__tel,
+  .order-form__email {
+    background-position: right 23px center;
+  }
+
   .order-form__signature {
     position: absolute;
-    bottom: 62.5px;
+    bottom: 68.5px;
     right: 50px;
     margin-bottom: 0;
+    font-size: 17px;
   }
 
   .order-form__button {
+    margin-top: 53px;
     width: 230px;
   }
 }
@@ -193,10 +206,11 @@
   }
 
   .order-form__title {
-    padding-left: 62px;
+    text-align: center;
   }
 
   .order-form__list {
+    padding-left: 10px;
     justify-content: flex-start;
   }
 
