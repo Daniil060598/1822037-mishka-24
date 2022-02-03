@@ -122,7 +122,7 @@
       <div class="order__wrapper-grey">
         <div class="order__wrapper">
           <fieldset class="order-form__group">
-            <h2 class="order-form__title">Цвет</h2>
+            <h2 class="order-form__title order-form__title-color">Цвет</h2>
             <ul class="order-form__list order-form__list-color">
               <li class="order-form__item order-form__item-color">
                 <label class="control">
@@ -191,20 +191,20 @@
       </div>
       <div class="order__wrapper-grey">
         <div class="order__wrapper">
-            <p class="order-form__field-group">
+            <p class="order-form__field-group order-form__field-group-tel">
               <label class="order-form__title order-form__title_margin" for="tel">Тел</label>
               <input class="order-form__tel field" type="tel" id="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
             </p>
-            <p class="order-form__field-group">
+            <p class="order-form__field-group order-form__field-group-email">
               <label class="order-form__title order-form__title_margin" for="email">E-mail</label>
-              <input class="order-form__email field" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+              <input class="order-form__email field" type="email" id="email" name="email" placeholder="Ваш Email*" required>
             </p>
         </div>
       </div>
       <div class="order__wrapper">
-          <p class="order-form__field-group">
-            <label class="order-form__title" for="message">Доп</label>
-            <input class="order-form__message field" type="text" id="message" name="message" placeholder="Опишите все ваши пожелания к заказу" required>
+          <p class="order-form__field-group order-form__field-group-message">
+            <label class="order-form__title order-form__title-message" for="message">Доп</label>
+            <textarea class="order-form__message field" type="text" id="message" name="message" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
           </p>
         <span class="order-form__signature">*Поля обязательны для заполнения</span>
         <button class="order-form__button button" type="submit">Отправить заказ</button>

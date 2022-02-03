@@ -1,7 +1,7 @@
 .order__wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 0 30px 31px;
+  padding: 0 30px 30px;
   width: auto;
 }
 
@@ -15,6 +15,7 @@
   margin: 0 auto;
   padding: 0 30px;
   text-align: center;
+  font-size: 27px;
 }
 
 .order__wrapper-grey {
@@ -25,6 +26,7 @@
   .order__title-wrapper {
     position: relative;
     padding: 34px 0 87px;
+    margin-bottom: 4px;
   }
 
   .order__title-wrapper::after {
@@ -40,6 +42,7 @@
 
   .order__title {
     max-width: 1050px;
+    font-size: 43px;
   }
 
   .order__wrapper {
@@ -60,10 +63,15 @@
 @media (min-width: @desktop-width) {
   .order__title-wrapper {
     padding: 34px 0 113px;
+    margin-bottom: 0;
   }
 
   .order__title-wrapper::after {
     height: 34px;
     background-image: url("../img/pattern-bg/zigzag-fill-desktop.svg");
+  }
+
+  .order__title {
+    font-size: 53px;
   }
 }

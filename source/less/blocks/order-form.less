@@ -1,5 +1,5 @@
 .order-form {
-  padding: 17px 0 22px;
+  padding: 17px 0 25px;
 }
 
 .order-form__text {
@@ -16,7 +16,8 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #63d1bb;
-  margin: 0 0 28px;
+  margin: 0 0 30px;
+  white-space: nowrap;
 }
 
 .order-form__title::after {
@@ -26,6 +27,10 @@
   height: 1px;
   background-color: #62d1ba;
   margin-left: 22px;
+}
+
+.order-form__title-color {
+  margin-bottom: 25px;
 }
 
 .order-form__list {
@@ -65,7 +70,16 @@
 }
 
 .order-form__field-group:last-child {
-  margin: 0;
+  margin-bottom: 0;
+}
+
+.order-form__field-group-tel {
+  margin: 0 0 34.5px;
+}
+
+
+.order-form__field-group-message {
+  margin: 0 0 11px;
 }
 
 .order-form__label {
@@ -76,7 +90,11 @@
 }
 
 .order-form__title_margin {
-  margin-bottom: 1.5px;
+  margin-bottom: 4.5px;
+}
+
+.order-form__title-message {
+  margin-bottom: 23px;
 }
 
 .order-form__tel {
@@ -102,9 +120,9 @@
 }
 
 .order-form__message {
-  box-sizing: border-box;
-  padding: 17px 17px 103px;
+  padding: 17px 17px 17px;
   border: 2px solid #444444;
+  height: 142px;
 
   &:hover {
     border-color: #62d1ba;
@@ -116,7 +134,7 @@
   font-size: 14px;
   line-height: 16px;
   color: @darkgrey;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 .order-form__button {
@@ -156,6 +174,9 @@
     display: flex;
     align-items: center;
     min-height: 52px;
+  }
+
+  .order-form__item-color {
     width: 239px;
   }
 
@@ -170,10 +191,11 @@
   .order-form__field-group {
     display: flex;
     align-items: baseline;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 
   .order-form__label {
+    font-size: 19px;
     margin-right: 23px;
   }
 
@@ -184,10 +206,11 @@
 
   .order-form__signature {
     position: absolute;
-    bottom: 68.5px;
+    bottom: 59.5px;
     right: 50px;
     margin-bottom: 0;
     font-size: 17px;
+    line-height: 30px;
   }
 
   .order-form__button {
@@ -203,22 +226,43 @@
 
   .order-form__text {
     padding-left: 176px;
+    max-width: 700px;
   }
 
   .order-form__title {
-    text-align: center;
+    padding-left: 60px;
+    min-width: 115px;
   }
 
   .order-form__list {
-    padding-left: 10px;
     justify-content: flex-start;
   }
 
-  .order-form__item {
+  .order-form__item-color {
     width: 262px;
   }
 
+  .order-form__field-wrapper {
+    max-width: 700px;
+  }
+
+  .order-form__tel,
+  .order-form__email {
+    background-position: right 8px center;
+  }
+
+  .order-form__tel,
+  .order-form__email,
+  .order-form__message {
+    max-width: 700px;
+  }
+
   .order-form__button {
-    margin-left: 229px;
+    margin-top: 49px;
+    margin-left: 175px;
+  }
+
+  .order-form__signature {
+    right: 225px;
   }
 }

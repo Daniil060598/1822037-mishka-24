@@ -1,6 +1,7 @@
 .field {
   margin: 0;
-  padding: 17px 0 17px 0;
+  padding: 17px 0;
+  font-family: inherit;
   font-size: 17px;
   line-height: 18px;
   width: 100%;
@@ -8,6 +9,7 @@
   border: none;
   border-bottom: 2px solid @black;
   outline: none;
+  box-sizing: border-box;
 }
 
 .field::placeholder {
@@ -25,6 +27,7 @@
 
 @media (min-width: @tablet-width) {
   .field {
-    padding: 17px 17px;
+    padding: 12px 17px;
+    font-size: 19px;
   }
 }
