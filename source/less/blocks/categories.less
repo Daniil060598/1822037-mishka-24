@@ -23,7 +23,7 @@
   max-width: 260px;
   text-align: center;
   margin: 73px auto 0;
-  padding: 0 30px;
+  padding: 0 30px 30px;
   font-size: 27px;
 }
 
@@ -47,7 +47,7 @@
   text-decoration: none;
 
   &:hover {
-    padding-bottom: 36px;
+    transform: translateY(-5px);
   }
 }
 
@@ -110,7 +110,7 @@
   .categories__wrapper {
     max-width: 1050px;
     padding: 0 50px;
-    height: 679px;
+    min-height: 679px;
   }
 
   .categories__title {
@@ -134,10 +134,6 @@
     padding: 25px 37px 34px 36px;
     font-size: 20px;
     line-height: 30px;
-
-    &:hover {
-      padding-bottom: 39px;
-    }
   }
 
   .categories__link_interior::after,
@@ -157,7 +153,7 @@
   }
 
   .categories__wrapper {
-    height: 679px;
+    min-height: 679px;
   }
 
   .categories__title {

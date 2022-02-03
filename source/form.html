@@ -49,6 +49,7 @@
                 <use xlink:href="img/sprite.svg#icon-search"></use>
               </svg>
               <span class="main-nav__link-text">Поиск по сайту</span>
+              <span class="visually-hidden">Открыть поиск по сайту</span>
             </a>
           </li>
           <li class="user-list__item">
@@ -204,7 +205,7 @@
       <div class="order__wrapper">
           <p class="order-form__field-group order-form__field-group-message">
             <label class="order-form__title order-form__title-message" for="message">Доп</label>
-            <textarea class="order-form__message field" type="text" id="message" name="message" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
+            <textarea class="order-form__message field" id="message" name="message" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
           </p>
         <span class="order-form__signature">*Поля обязательны для заполнения</span>
         <button class="order-form__button button" type="submit">Отправить заказ</button>
@@ -214,9 +215,10 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="#">
-        <svg class="page-footer__logo-img" width="102" height="35">
+        <svg class="page-footer__logo-img" width="102" height="35" role="img" aria-label="Логотип Интернет-магазина Мишка">
           <use xlink:href="img/sprite.svg#footer-logo"></use>
         </svg>
+        <span class="visually-hidden">Перейти на главную страницу</span>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -249,9 +251,10 @@
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__link-logo" width="27" height="35" fill="#63D1BB">
+          <svg class="copyright__link-logo" width="27" height="35" fill="#63D1BB" role="img" aria-label="Логотип html-academy">
             <use xlink:href="img/sprite.svg#html-academy-logo"></use>
           </svg>
+          <span class="visually-hidden">Перейти на сайт html-academy</span>
         </a>
       </div>
     </div>

@@ -48,6 +48,7 @@
               <svg class="user-list__icon-search" width="18" height="18">
                 <use xlink:href="img/sprite.svg#icon-search"></use>
               </svg>
+              <span class="visually-hidden">Открыть поиск по сайту</span>
               <span class="main-nav__link-text">Поиск по сайту</span>
             </a>
           </li>
@@ -148,6 +149,8 @@
         <p class="popular-product__image-wrapper">
           <picture>
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/popular-product/triple-set-desktop.webp 1x, img/popular-product/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/popular-product/triple-set-tablet.webp 1x, img/popular-product/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/popular-product/triple-set-mobile.webp 1x, img/popular-product/triple-set-mobile@2x.webp 2x">
             <source media="(min-width: 1150px)" srcset="img/popular-product/triple-set-desktop.jpg 1x, img/popular-product/triple-set-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/popular-product/triple-set-tablet.jpg 1x, img/popular-product/triple-set-tablet@2x.jpg 2x">
             <img class="popular-product__img" src="img/popular-product/triple-set-mobile.jpg" srcset="img/popular-product/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
@@ -228,9 +231,10 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="#">
-          <svg class="page-footer__logo-img" width="102" height="35">
+          <svg class="page-footer__logo-img" width="102" height="35" role="img" aria-label="Логотип Интернет-магазина Мишка">
             <use xlink:href="img/sprite.svg#footer-logo"></use>
           </svg>
+          <span class="visually-hidden">Перейти на главную страницу</span>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -263,9 +267,10 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__link-logo" width="27" height="35" fill="#63D1BB">
+            <svg class="copyright__link-logo" width="27" height="35" fill="#63D1BB" role="img" aria-label="Логотип html-academy">
               <use xlink:href="img/sprite.svg#html-academy-logo"></use>
             </svg>
+            <span class="visually-hidden">Перейти на сайт html-academy</span>
           </a>
         </div>
       </div>
