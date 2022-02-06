@@ -17,7 +17,7 @@
   text-transform: uppercase;
   color: #63d1bb;
   margin: 0 0 30px;
-  white-space: nowrap;
+  min-width: 0;
 }
 
 .order-form__title::after {
@@ -153,9 +153,9 @@
 
   .order-form__title {
     display: block;
-    padding-top: 17px;
-    min-width: 167px;
-    max-width: 167px;
+    padding: 17px 17px 0 0;
+    min-width: 150px;
+    max-width: 150px;
     margin-bottom: 0;
     white-space: normal;
   }
@@ -179,7 +179,8 @@
   }
 
   .order-form__item-color {
-    width: 239px;
+    width: 229px;
+    margin-right: 10px;
   }
 
   .order-form__item_radio {
@@ -199,6 +200,7 @@
   .order-form__label {
     font-size: 19px;
     margin-right: 23px;
+    max-width: 167px;
   }
 
   .order-form__tel,
@@ -213,6 +215,7 @@
     margin-bottom: 0;
     font-size: 17px;
     line-height: 30px;
+    max-width: 350px;
   }
 
   .order-form__button {
@@ -232,9 +235,9 @@
   }
 
   .order-form__title {
-    padding-left: 60px;
-    min-width: 115px;
-    max-width: 115px;
+    padding-left: 62px;
+    min-width: 96px;
+    max-width: 96px;
   }
 
   .order-form__list {
@@ -242,7 +245,7 @@
   }
 
   .order-form__item-color {
-    width: 262px;
+    width: 252px;
   }
 
   .order-form__field-wrapper {
